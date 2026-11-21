@@ -1,14 +1,314 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JPI Labs | AI Literacy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JPI Labs | AI & Employability</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #182B49;
+  --cream: #F7F6F2;
+  --orange: #E6A15C;
+  --text: #283344;
+  --muted: #687386;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  background: var(--navy);
+  color: white;
+  padding: 75px 8%;
+}
+
+header .eyebrow {
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.1;
+  max-width: 800px;
+  margin: 20px 0;
+}
+
+header p {
+  color: #d9dfeb;
+  max-width: 650px;
+  font-size: 18px;
+}
+
+main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 65px 25px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+  font-size: 34px;
+}
+
+.intro {
+  max-width: 780px;
+  margin-bottom: 55px;
+}
+
+.section-label {
+  color: #bd7737;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+details {
+  background: white;
+  border: 1px solid #e7e4dd;
+  border-radius: 10px;
+  margin: 16px 0;
+  overflow: hidden;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 24px 28px;
+  color: var(--navy);
+  font-size: 19px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary::-webkit-details-marker { display: none; }
+
+summary::after {
+  content: '+';
+  color: var(--orange);
+  font-size: 26px;
+}
+
+details[open] summary::after { content: '−'; }
+
+.content {
+  padding: 0 28px 28px;
+  color: var(--text);
+}
+
+.content h3 {
+  color: var(--navy);
+  margin-top: 25px;
+}
+
+.content a {
+  color: #a96225;
+}
+
+footer {
+  background: var(--navy);
+  color: white;
+  padding: 45px 8%;
+  text-align: center;
+}
+
+footer p { color: #d9dfeb; }
+
+@media(max-width: 600px) {
+  header { padding: 55px 7%; }
+  main { padding: 40px 18px; }
+  summary { padding: 20px; font-size: 17px; }
+  .content { padding: 0 20px 22px; }
+}
+</style>
 </head>
+
 <body>
-    <h1>JPI Labs</h1>
-    <h2>AI Literacy and Its Impact on the Job Market</h2>
-    <p>Welcome to JPI Labs.</p>
+
+<header>
+  <div class="eyebrow">JPI Labs · Research Project</div>
+  <h1>AI Literacy<br>and Employability</h1>
+  <p>
+    Exploring how artificial intelligence is transforming the
+    graduate job market, recruitment practices and the skills
+    required to navigate an increasingly AI-driven workplace.
+  </p>
+</header>
+
+<main>
+
+<section class="intro">
+  <div class="section-label">About the project</div>
+  <h2>Understanding the changing world of work</h2>
+  <p>
+    Artificial intelligence is reshaping the relationship between
+    education, recruitment and employment. As AI tools become
+    increasingly embedded in professional environments, students
+    and graduates need more than technical familiarity: they need
+    the ability to understand, evaluate and use these tools
+    responsibly.
+  </p>
+  <p>
+    This project examines AI literacy and its implications for
+    employability, bringing together research and practical
+    guidance for students entering the labour market.
+  </p>
+</section>
+
+<div class="section-label">Research and practical resources</div>
+
+<details>
+  <summary>AI Literacy and Its Impact on the Job Market</summary>
+  <div class="content">
+    <h3>Introduction</h3>
+    <p>
+      Artificial intelligence is changing the nature of work,
+      influencing how organisations operate and how employers
+      recruit candidates. Understanding these developments is
+      increasingly important for students and graduates.
+    </p>
+
+    <h3>AI Literacy</h3>
+    <p>
+      AI literacy involves understanding the capabilities and
+      limitations of AI systems, evaluating their outputs and
+      applying them appropriately. It also requires awareness
+      of issues such as bias, privacy, transparency and accountability.
+    </p>
+
+    <h3>Implications for Employment</h3>
+    <p>
+      AI can automate certain tasks while creating demand for
+      new skills. Graduates therefore benefit from combining
+      digital competence with critical thinking, communication,
+      adaptability and subject-specific knowledge.
+    </p>
+
+    <h3>Responsible Use</h3>
+    <p>
+      Using AI effectively requires human judgement. Candidates
+      should be able to assess generated information, recognise
+      errors and remain responsible for the work they submit.
+    </p>
+  </div>
+</details>
+
+<details>
+  <summary>Company Profiling</summary>
+  <div class="content">
+    <h3>Researching an Organisation</h3>
+    <p>
+      Researching an organisation helps candidates move beyond
+      asking whether a role exists to understanding whether
+      the employer is somewhere they want to work — and why.
+    </p>
+
+    <h3>What to Investigate</h3>
+    <ul>
+      <li>The organisation's purpose, history and values.</li>
+      <li>Its products, services and position in the market.</li>
+      <li>Recent developments and strategic priorities.</li>
+      <li>Its organisational culture and working environment.</li>
+      <li>The role's responsibilities and required competencies.</li>
+    </ul>
+
+    <h3>Applying Your Research</h3>
+    <p>
+      Effective company research should inform applications,
+      cover letters and interview answers. The aim is to make
+      specific connections between the organisation's work,
+      the position and the candidate's own experience.
+    </p>
+  </div>
+</details>
+
+<details>
+  <summary>Cover Letter</summary>
+  <div class="content">
+    <h3>Writing an Effective Cover Letter</h3>
+    <p>
+      A cover letter should explain why you are interested in
+      a particular position and what you can contribute.
+      It should complement your CV rather than simply repeat it.
+    </p>
+
+    <h3>Key Principles</h3>
+    <ul>
+      <li>Address the requirements of the specific role.</li>
+      <li>Demonstrate knowledge of the organisation.</li>
+      <li>Use concrete examples to support your claims.</li>
+      <li>Explain your motivation clearly and convincingly.</li>
+      <li>Keep the language professional and concise.</li>
+    </ul>
+  </div>
+</details>
+
+<details>
+  <summary>CV</summary>
+  <div class="content">
+    <h3>Building a Strong CV</h3>
+    <p>
+      A CV presents a candidate's education, experience,
+      skills and achievements. Its purpose is to communicate
+      relevant information clearly and efficiently.
+    </p>
+
+    <h3>Key Principles</h3>
+    <ul>
+      <li>Use a clear and consistent structure.</li>
+      <li>Prioritise experience relevant to the position.</li>
+      <li>Describe responsibilities and achievements precisely.</li>
+      <li>Use active language and specific examples.</li>
+      <li>Check formatting, spelling and accuracy.</li>
+    </ul>
+  </div>
+</details>
+
+<details>
+  <summary>Interview</summary>
+  <div class="content">
+    <h3>Preparing for an Interview</h3>
+    <p>
+      Interviews allow employers to assess a candidate's
+      experience, motivation, judgement and suitability for
+      a position. Preparation should combine organisational
+      research with reflection on one's own experience.
+    </p>
+
+    <h3>Preparation Strategies</h3>
+    <ul>
+      <li>Research the organisation and the position.</li>
+      <li>Prepare examples demonstrating relevant skills.</li>
+      <li>Practise structuring answers using the STAR method.</li>
+      <li>Prepare thoughtful questions for the interviewer.</li>
+      <li>Reflect on what you learned from previous experiences.</li>
+    </ul>
+  </div>
+</details>
+
+</main>
+
+<footer>
+  <h2 style="color:white;">JPI Labs</h2>
+  <p>AI Literacy and Its Impact on the Job Market</p>
+</footer>
+
 </body>
 </html>
