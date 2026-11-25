@@ -122,6 +122,55 @@ details[open] summary::after { content: '−'; }
   color: #a96225;
 }
 
+.research-doc-section {
+  margin-top: 55px;
+}
+
+.research-doc-card {
+  background: white;
+  border: 1px solid #e7e4dd;
+  border-left: 4px solid var(--orange);
+  border-radius: 10px;
+  padding: 28px 32px;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.research-doc-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+  font-size: 24px;
+  margin: 0 0 8px 0;
+}
+
+.research-doc-card p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 600px;
+}
+
+.doc-button {
+  display: inline-block;
+  background: var(--navy);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 13px 22px;
+  border-radius: 8px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.doc-button:hover {
+  background: #233e68;
+  transform: translateY(-1px);
+}
+
 footer {
   background: var(--navy);
   color: white;
@@ -131,11 +180,16 @@ footer {
 
 footer p { color: #d9dfeb; }
 
+footer a {
+  color: var(--orange);
+}
+
 @media(max-width: 600px) {
   header { padding: 55px 7%; }
   main { padding: 40px 18px; }
   summary { padding: 20px; font-size: 17px; }
   .content { padding: 0 20px 22px; }
+  .research-doc-card { padding: 22px 20px; }
 }
 </style>
 </head>
@@ -303,6 +357,22 @@ footer p { color: #d9dfeb; }
   </div>
 </details>
 
+<section class="research-doc-section">
+  <div class="section-label">Publication</div>
+  <div class="research-doc-card">
+    <div>
+      <h3>Full Research Document</h3>
+      <p>
+        Access the complete paper exploring AI literacy, recruitment trends,
+        and graduate employability in detail.
+      </p>
+    </div>
+    <a class="doc-button" href="https://docs.google.com/document/d/1eyE2R0qK2VfKU0DsuzQHLkl4T2pZHyxK-fFMb10PSGM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+      Read Full Document →
+    </a>
+  </div>
+</section>
+
 </main>
 
 <footer>
@@ -312,17 +382,16 @@ footer p { color: #d9dfeb; }
   <p>University College London</p>
   <p><a href="mailto:aral.karadayi.25@ucl.ac.uk">aral.karadayi.25@ucl.ac.uk</a></p>
 
-
-<div class="download-section">
-  <h3>JPI Career Assistant</h3>
-  <p>
-    An AI-powered assistant designed to help university students
-    with job and internship applications.
-  </p>
-  <a href="downloads/jpi-labs-skills-all.zip" download>
-    Download the skills →
-  </a>
-</div>
+  <div class="download-section">
+    <h3>JPI Career Assistant</h3>
+    <p>
+      An AI-powered assistant designed to help university students
+      with job and internship applications.
+    </p>
+    <a href="downloads/jpi-labs-skills-all.zip" download>
+      Download the skills →
+    </a>
+  </div>
 </footer>
 
 </body>
